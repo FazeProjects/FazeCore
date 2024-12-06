@@ -8,5 +8,7 @@
             "name": "Sprikkz"
         }
     ],
-    "require": {}
+    "require": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

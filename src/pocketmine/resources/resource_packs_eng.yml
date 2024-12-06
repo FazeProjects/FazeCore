@@ -1,0 +1,13 @@
+# Choose whether players must use the resource packs you have selected in order to join the server.
+# NOTE: This won't do anything if there are no resource packs listed below.
+force_resources: false
+resource_stack:
+# Resource packs are applied bottom-to-top. This means that higher stacks override resources in lower packs.
+# Entries here should indicate the name of the resource pack file.
+# Example:
+# - vanilla.zip
+# - FazeMC.zip
+# If you want to force clients to use vanilla resources, you should put the vanilla resource pack in your resources folder and add it to the stack here.
+# Example of adding a pack:
+# - "vanilla.zip"
+# - "FazeMC.zip"

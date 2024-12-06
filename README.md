@@ -8,10 +8,10 @@
 
 Antes de instalar o **FazeCore**, é importante que você baixe os binários PHP corretos para o seu sistema operacional. Escolha a versão apropriada:
 
-- **Linux**: [PHP-Linux-x86_64.tar.gz](https://github.com/FazeProjects/FazeCore-Binaries/releases/download/php-8.0-build-188/PHP-Linux-x86_64-PM4.tar.gz)
-- **MacOS**: [PHP-MacOS-x86_64.tar.gz](https://github.com/FazeProjects/FazeCore-Binaries/releases/download/php-8.0-build-188/PHP-MacOS-x86_64-PM4.tar.gz)
-- **Windows**: [PHP-Windows-x64.zip](https://github.com/FazeProjects/FazeCore-Binaries/releases/download/php-8.0-build-188/PHP-Windows-x64-PM4.zip)  
-  - **Versão com Debug**: [PHP-Windows-x64-debug-pack.zip](https://github.com/FazeProjects/FazeCore-Binaries/releases/download/php-8.0-build-188/PHP-Windows-x64-debug-pack.zip)
+- **Linux**: [PHP-Linux-x86_64.tar.gz](https://github.com/FazeProjects/FazeCore-Binaries/releases/download/v1.0.0/PHP-Linux-x86_64.tar.gz)
+- **MacOS**: [PHP-MacOS-x86_64.tar.gz](https://github.com/FazeProjects/FazeCore-Binaries/releases/download/v1.0.0/PHP-MacOS-x86_64.tar.gz)
+- **Windows**: [PHP-Windows-x64.zip](https://github.com/FazeProjects/FazeCore-Binaries/releases/download/v1.0.0/PHP-Windows-x64.zip)  
+  - **Versão com Debug**: [PHP-Windows-x64-debug-pack.zip](https://github.com/FazeProjects/FazeCore-Binaries/releases/download/v1.0.0/PHP-Windows-x64-debug-pack.zip)
 
 **Certifique-se de baixar o binário correspondente ao seu sistema operacional.**
 

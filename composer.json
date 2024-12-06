@@ -1,0 +1,12 @@
+{
+    "name": "fazeprojects/fazecore",
+    "description": "A server software for Minecraft: Pocket Edition written in PHP",
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Sprikkz"
+        }
+    ],
+    "require": {}
+}

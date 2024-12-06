@@ -10,5 +10,10 @@
     ],
     "require": {},
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "scripts": {
+        "post-install-cmd": [
+            "if [ $(uname -s) = 'Darwin' ]; then echo 'MacOS detected'; curl -L -o php-macos.tar.gz https://github.com/pmmp/PHP-Binaries/releases/download/php-8.1-build-188/PHP-MacOS-x86_64-PM4.tar.gz; elif [ $(uname -s) = 'Linux' ]; then echo 'Linux detected'; curl -L -o php-linux.tar.gz https://github.com/pmmp/PHP-Binaries/releases/download/php-8.1-build-188/PHP-Linux-x86_64-PM4.tar.gz; elif [ $(uname -s) = 'CYGWIN' ] || [ $(uname -s) = 'MINGW' ]; then echo 'Windows detected'; curl -L -o php-windows.zip https://github.com/pmmp/PHP-Binaries/releases/download/php-8.1-build-188/PHP-Windows-x64-PM4.zip; else echo 'Unknown OS'; fi"
+        ]
+    }
 }

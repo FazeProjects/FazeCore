@@ -381,17 +381,24 @@ class Item implements ItemIds, JsonSerializable {
      *
      * @return Item
      */
-    public static function get(int $id, int $meta = 0, int $count = 1, string $tags = "") : Item{
-        try{
-            $class = self::$list[$id];
-            if($class === null){
+    public static function get(int $id, int $meta = 0, int $count = 1, string $tags = "") : Item {
+        try {
+            if (!isset(self::$list) || !isset(self::$list[$id])) {
                 return (new Item($id, $meta, $count))->setCompoundTag($tags);
-            }elseif($id < 256){
+            }
+
+            $class = self::$list[$id];
+
+            if ($class === null) {
+                return (new Item($id, $meta, $count))->setCompoundTag($tags);
+            }
+
+            if ($id < 256) {
                 return (new ItemBlock(new $class($meta), $meta, $count))->setCompoundTag($tags);
-            }else{
+            } else {
                 return (new $class($meta, $count))->setCompoundTag($tags);
             }
-        }catch(RuntimeException $e){
+        } catch (RuntimeException $e) {
             return (new Item($id, $meta, $count))->setCompoundTag($tags);
         }
     }
